@@ -30,7 +30,8 @@ h2 {
 
 .introduction{
   background-color: white;
-  padding:20px
+  padding:20px;
+  text-align:center;
 }
 
 .language-toggle {
