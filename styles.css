@@ -4,7 +4,7 @@
 }
 
 body{
-  background-color:rgb(205,7,30);
+  background-color:white;
   color:rgb(255, 210, 48);
   font-family:outfit;
 }
@@ -21,7 +21,6 @@ h1 {
 background-color:brown;
 border-bottom: solid 10px brown;
 
-
 }
 
 h2 {
@@ -34,15 +33,29 @@ h2 {
   padding:20px
 }
 
+.language-toggle {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0 20px;
+}
+
+#toggle-button {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
 .dim-sum-grid {
 background-color: white;
 padding: 50px;
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-columns: repeat(auto-fit, 224px);
 column-gap:30px;
 row-gap:40px;
 border-bottom: solid 10px brown;
-
+justify-content: center;
 }
 
 .dim-sum-item{
@@ -50,6 +63,7 @@ box-shadow: rgb(152, 152, 152) 10px 10px 10px ;
   background-color: brown;
   padding: 12px;
   border-radius: 10px;
+
 }
 
 .dim-sum-image {
@@ -73,5 +87,6 @@ h3 {
 
 footer{
   text-align: center;
-  padding:20px
+  padding:20px;
+  background-color: brown;
 }

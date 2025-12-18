@@ -4,136 +4,192 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dim Sum Diner</title>
+
     <link rel="stylesheet" href="./styles.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Shizuru&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Shizuru&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
   </head>
+
   <body>
     <div class="header">
       <h1>Welcome to Dim Sum Diner</h1>
     </div>
+
     <div class="introduction">
       <h2>The ultimate Dim Sum Guide</h2>
     </div>
+
+    <div class="language-toggle">
+      <button id="toggle-button">Show 中文</button>
+    </div>
+
     <section class="dim-sum-grid">
 
       <div class="dim-sum-item">
         <div class="dim-sum-image">
-          <img src="./dim-sum-images/1.jpeg" alt="Dim sum item" />
+          <img src="./dim-sum-images/1.jpeg" alt="Siu Mai">
         </div>
-        <h3>Siu Mai — 燒賣</h3>
+        <h3>
+          <span class="en">Siu Mai</span>
+          <span class="zh" hidden>燒賣</span>
+        </h3>
       </div>
 
-            <div class="dim-sum-item">
+      <div class="dim-sum-item">
         <div class="dim-sum-image">
-          <img src="./dim-sum-images/2.jpeg" alt="Dim sum item" />
+          <img src="./dim-sum-images/2.jpeg" alt="Steamed Pork Ribs">
         </div>
-        <h3>Steamed Pork Ribs (Black Bean) — 豉汁蒸排骨</h3>
+        <h3>
+          <span class="en">Steamed Pork Ribs (Black Bean)</span>
+          <span class="zh" hidden>豉汁蒸排骨</span>
+        </h3>
       </div>
 
-            <div class="dim-sum-item">
+      <div class="dim-sum-item">
         <div class="dim-sum-image">
-          <img src="./dim-sum-images/3.jpeg" alt="Dim sum item" />
+          <img src="./dim-sum-images/3.jpeg" alt="Steamed Beef Balls">
         </div>
-        <h3>Steamed Beef Balls — 牛肉球</h3>
+        <h3>
+          <span class="en">Steamed Beef Balls</span>
+          <span class="zh" hidden>牛肉球</span>
+        </h3>
       </div>
 
-            <div class="dim-sum-item">
+      <div class="dim-sum-item">
         <div class="dim-sum-image">
-          <img src="./dim-sum-images/4.jpeg" alt="Dim sum item" />
+          <img src="./dim-sum-images/4.jpeg" alt="Chicken Feet">
         </div>
-        <h3>Chicken Feet — 鳳爪</h3>
+        <h3>
+          <span class="en">Chicken Feet</span>
+          <span class="zh" hidden>鳳爪</span>
+        </h3>
       </div>
 
-            <div class="dim-sum-item">
+      <div class="dim-sum-item">
         <div class="dim-sum-image">
-          <img src="./dim-sum-images/5.jpeg" alt="Dim sum item" />
+          <img src="./dim-sum-images/5.jpeg" alt="Custard Buns">
         </div>
-        <h3>Custard Buns — 奶黃包</h3>
+        <h3>
+          <span class="en">Custard Buns</span>
+          <span class="zh" hidden>奶黃包</span>
+        </h3>
       </div>
 
-            <div class="dim-sum-item">
+      <div class="dim-sum-item">
         <div class="dim-sum-image">
-          <img src="./dim-sum-images/6.jpeg" alt="Dim sum item" />
+          <img src="./dim-sum-images/6.jpeg" alt="Har Gow">
         </div>
-        <h3>Har Gao — 蝦餃</h3>
+        <h3>
+          <span class="en">Har Gow</span>
+          <span class="zh" hidden>蝦餃</span>
+        </h3>
       </div>
 
-            <div class="dim-sum-item">
+      <div class="dim-sum-item">
         <div class="dim-sum-image">
-          <img src="./dim-sum-images/7.jpeg" alt="Dim sum item" />
+          <img src="./dim-sum-images/7.jpeg" alt="Xiao Long Bao">
         </div>
-        <h3>Xiao Long Bao — 小籠包</h3>
+        <h3>
+          <span class="en">Xiao Long Bao</span>
+          <span class="zh" hidden>小籠包</span>
+        </h3>
       </div>
 
-            <div class="dim-sum-item">
+      <div class="dim-sum-item">
         <div class="dim-sum-image">
-          <img src="./dim-sum-images/8.jpeg" alt="Dim sum item" />
+          <img src="./dim-sum-images/8.jpeg" alt="Lo Mai Bao">
         </div>
-        <h3>Lo Mai Bao — 糯米包</h3>
+        <h3>
+          <span class="en">Lo Mai Bao</span>
+          <span class="zh" hidden>糯米包</span>
+        </h3>
       </div>
 
-            <div class="dim-sum-item">
+      <div class="dim-sum-item">
         <div class="dim-sum-image">
-          <img src="./dim-sum-images/9.jpeg" alt="Dim sum item" />
+          <img src="./dim-sum-images/9.jpeg" alt="Egg Tarts">
         </div>
-        <h3>Egg Tarts (HK style) — 蛋撻</h3>
+        <h3>
+          <span class="en">Egg Tarts (HK style)</span>
+          <span class="zh" hidden>蛋撻</span>
+        </h3>
       </div>
 
-            <div class="dim-sum-item">
+      <div class="dim-sum-item">
         <div class="dim-sum-image">
-          <img src="./dim-sum-images/10.jpeg" alt="Dim sum item" />
+          <img src="./dim-sum-images/10.jpeg" alt="Ham Sui Gok">
         </div>
-        <h3>Ham Sui Gok — 鹹水角</h3>
+        <h3>
+          <span class="en">Ham Sui Gok</span>
+          <span class="zh" hidden>鹹水角</span>
+        </h3>
       </div>
 
-            <div class="dim-sum-item">
+      <div class="dim-sum-item">
         <div class="dim-sum-image">
-          <img src="./dim-sum-images/11.jpeg" alt="Dim sum item" />
+          <img src="./dim-sum-images/11.jpeg" alt="Baked Char Siu Bao">
         </div>
-        <h3>Baked Char Siu Bao — 叉燒酥</h3>
+        <h3>
+          <span class="en">Baked Char Siu Bao</span>
+          <span class="zh" hidden>叉燒酥</span>
+        </h3>
       </div>
 
-            <div class="dim-sum-item">
+      <div class="dim-sum-item">
         <div class="dim-sum-image">
-          <img src="./dim-sum-images/12.jpeg" alt="Dim sum item" />
+          <img src="./dim-sum-images/12.jpeg" alt="Spring Rolls">
         </div>
-        <h3>Spring Rolls — 春卷</h3>
+        <h3>
+          <span class="en">Spring Rolls</span>
+          <span class="zh" hidden>春卷</span>
+        </h3>
       </div>
 
-            <div class="dim-sum-item">
+      <div class="dim-sum-item">
         <div class="dim-sum-image">
-          <img src="./dim-sum-images/13.jpeg" alt="Dim sum item" />
+          <img src="./dim-sum-images/13.jpeg" alt="Pan-Fried Turnip Cake">
         </div>
-        <h3>Pan-Fried Turnip Cake — 煎蘿蔔糕</h3>
+        <h3>
+          <span class="en">Pan-Fried Turnip Cake</span>
+          <span class="zh" hidden>煎蘿蔔糕</span>
+        </h3>
       </div>
 
-            <div class="dim-sum-item">
+      <div class="dim-sum-item">
         <div class="dim-sum-image">
-          <img src="./dim-sum-images/14.jpeg" alt="Dim sum item" />
+          <img src="./dim-sum-images/14.jpeg" alt="Taro Dumpling">
         </div>
-        <h3>Taro Dumpling — 芋角</h3>
+        <h3>
+          <span class="en">Taro Dumpling (Wu Gok)</span>
+          <span class="zh" hidden>芋角</span>
+        </h3>
       </div>
 
-            <div class="dim-sum-item">
+      <div class="dim-sum-item">
         <div class="dim-sum-image">
-          <img src="./dim-sum-images/15.jpeg" alt="Dim sum item" />
+          <img src="./dim-sum-images/15.jpeg" alt="Ming Ha Gok">
         </div>
-        <h3>Ming Ha Gok — 明蝦角</h3>
+        <h3>
+          <span class="en">Ming Ha Gok</span>
+          <span class="zh" hidden>明蝦角</span>
+        </h3>
       </div>
 
-            <div class="dim-sum-item">
+      <div class="dim-sum-item">
         <div class="dim-sum-image">
-          <img src="./dim-sum-images/16.jpeg" alt="Dim sum item" />
+          <img src="./dim-sum-images/16.jpeg" alt="Beef Cheung Fun">
         </div>
-        <h3>Beef Cheung Fun — 牛肉腸粉</h3>
+        <h3>
+          <span class="en">Beef Cheung Fun</span>
+          <span class="zh" hidden>牛肉腸粉</span>
+        </h3>
       </div>
 
     </section>
-
     <footer>
-      <p>Dim Sum Diner 	&middot; Built with ❤️ by Kiki</p>
+      <p>Dim Sum Diner · Built with ❤️ by Kiki</p>
     </footer>
   </body>
 </html>
